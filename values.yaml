@@ -2,7 +2,7 @@ backend:
   name: express
   replicas: 1
   image: 
-    repo: amazon/dynamodb-local
+    repo: 464410800995.dkr.ecr.ap-northeast-1.amazonaws.com/spinnaker-project:ee999707533d5afe39e6ac89ae7c9a9357e64c93
     pullPolicy: IfNotPresent
     port: 3000
   service:
