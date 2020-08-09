@@ -1,0 +1,10 @@
+backend:
+  name: express
+  replicas: 1
+  image: 
+    repo: amazon/dynamodb-local
+    pullPolicy: IfNotPresent
+    port: 3000
+  service:
+    type: LoadBalancer
+    port: 3000
